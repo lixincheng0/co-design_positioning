@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Practice | The Living Field Guide</title>
+    <meta
+      name="description"
+      content="Interactive Practice — The Living Field Guide. An editorial co-design toolkit for reflection, translation, and action."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <aside class="sidebar" aria-label="Primary navigation">
+        <div class="sidebar__brand">
+          <a class="brandmark" href="#home" aria-label="Interactive Practice home">
+            <span class="brandmark__title">Interactive Practice</span>
+            <span class="brandmark__subtitle">The Living Field Guide</span>
+          </a>
+        </div>
+
+        <nav class="sidebar__nav" aria-label="Section navigation">
+          <ul id="sidebar-nav" class="nav-list"></ul>
+          <a class="sidebar__action" href="#section/position">New Reflection</a>
+        </nav>
+      </aside>
+
+      <div class="content-shell">
+        <header class="topbar">
+          <nav class="topbar__nav" aria-label="Top navigation">
+            <ul id="top-nav" class="top-nav-list"></ul>
+          </nav>
+          <div class="topbar__aux" aria-label="Account tools">
+            <a class="account-chip" href="#" aria-label="Account">
+              <span class="account-chip__icon" data-icon="account"></span>
+            </a>
+          </div>
+        </header>
+
+        <main class="page-main">
+          <div id="home-view" class="page-view page-view--home">
+          <section id="intro" class="hero" aria-labelledby="hero-title">
+            <div class="hero__statement">
+              <div class="eyebrow eyebrow--accent">
+                <span class="eyebrow__rule"></span>
+                <span>Positioning Statement</span>
+              </div>
+
+              <h1 id="hero-title" class="hero__title">
+                <span class="hero__title-line">An interactive toolkit</span>
+                <span class="hero__title-line">for translating between</span>
+                <span class="hero__title-line">lived experience,</span>
+                <span class="hero__title-line">organisational constraints,</span>
+                <span class="hero__title-line">and technical</span>
+                <span class="hero__title-line">implementation.</span>
+              </h1>
+
+              <div class="hero__actions">
+                <a class="button button--primary" href="#section/position">Start Reflection</a>
+                <a class="button button--secondary" href="#section/toolkit">View Modules</a>
+              </div>
+            </div>
+
+            <aside class="hero__note" aria-label="Facilitator note">
+              <p>
+                This site presents my position on co-design through a set of reusable practice
+                lenses. It is not a neutral framework, but a reflective toolkit for working across
+                power, participation, and implementation. I developed this toolkit from my
+                perspective as a designer working across systems, interfaces, and
+                implementation-focused contexts.
+              </p>
+              <span class="note-tag">[ Facilitator Note ]</span>
+            </aside>
+          </section>
+          <section class="home-index" aria-labelledby="home-index-title">
+            <header class="section-header section-header--split">
+              <div class="section-header__content">
+                <div class="eyebrow eyebrow--accent">
+                  <span class="eyebrow__rule"></span>
+                  <span>Field Guide Index</span>
+                </div>
+                <h2 id="home-index-title" class="section-title section-title--compact">
+                  Enter the toolkit through one of four practice lenses.
+                </h2>
+              </div>
+              <p class="section-note">
+                This page works as a directory. Each section opens as its own view, so the toolkit
+                feels browsable rather than read as one long essay.
+              </p>
+            </header>
+
+            <div id="guide-index" class="guide-index-grid"></div>
+          </section>
+          </div>
+
+          <section
+            id="section-view"
+            class="page-view page-view--section"
+            aria-labelledby="section-page-title"
+            hidden
+          ></section>
+
+          <section
+            id="module-view"
+            class="page-view page-view--module"
+            aria-labelledby="module-page-title"
+            hidden
+          ></section>
+        </main>
+
+        <footer class="site-footer">
+          <div class="site-footer__inner">
+            <section class="site-footer__intro" aria-label="Project summary">
+              <h2 class="site-footer__brand">Interactive Practice</h2>
+              <p>
+                Interactive Practice is a reflective toolkit for practicing co-design across power,
+                translation, implementation, and exit.
+              </p>
+            </section>
+
+            <nav class="site-footer__column" aria-label="Modules">
+              <h3>Modules</h3>
+              <ul id="footer-modules" class="footer-list"></ul>
+            </nav>
+
+            <nav class="site-footer__column" aria-label="Reference">
+              <h3>Reference</h3>
+              <ul id="footer-resources" class="footer-list"></ul>
+            </nav>
+          </div>
+
+          <div class="site-footer__base">
+            <p>© 2023 The Living Field Guide</p>
+            <nav aria-label="Footer links">
+              <ul id="footer-legal" class="footer-legal"></ul>
+            </nav>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+      <ul id="mobile-nav" class="mobile-nav__list"></ul>
+    </nav>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
